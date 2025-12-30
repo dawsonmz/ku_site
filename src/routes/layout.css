@@ -112,6 +112,24 @@ html {
     font-size: var(--text-base);
     line-height: var(--tw-leading, var(--text-basesss--line-height));
   }
+
+  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+  --tw-ease: cubic-bezier(0,0,0.2,1);
+  transition-timing-function: cubic-bezier(0,0,0.2,1);
+  --tw-duration: 150ms;
+  transition-duration: 150ms;
+
+  &:hover {
+    @media (hover: hover) {
+      background-color: var(--support-color-red);
+      color: #FFFFFF;
+    }
+  }
+
+  &:active {
+    background-color: var(--support-color-red);
+    color: #FFFFFF;
+  }
 }
 
 .link-style-no-underline {
