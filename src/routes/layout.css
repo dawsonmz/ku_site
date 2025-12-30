@@ -17,29 +17,57 @@ html {
   color: var(--primary-color);
 }
 
-.white-block {
-  background-color: #FFFFFF;
-  padding-inline: calc(var(--spacing) * 72);
-  padding-block: calc(var(--spacing) * 28);
-}
+.block-sizing {
+  margin-inline: auto;
+  @media (width < 54rem) {
+    margin-inline: calc(var(--spacing) * 5);
+  }
 
-.gray-block {
-  background-color: var(--support-color-gray);
-  padding-inline: calc(var(--spacing) * 72);
-  padding-block: calc(var(--spacing) * 28);
+  max-width: calc(var(--spacing) * 150);
+  padding-block: calc(var(--spacing) * 12);
+  @media (width >= 48rem) {
+    max-width: calc(var(--spacing) * 200);
+    padding-block: calc(var(--spacing) * 16);
+  }
+  @media (width >= 64rem) {
+    max-width: calc(var(--spacing) * 250);
+    padding-block: calc(var(--spacing) * 20);
+  }
+  @media (width >= 80rem) {
+    max-width: calc(var(--spacing) * 290);
+    padding-block: calc(var(--spacing) * 24);
+  }
 }
 
 .header-style {
   font-family: 'Nunito', sans-serif;
   font-weight: var(--font-weight-semibold);
-  font-size: var(--text-6xl);
-  line-height: var(--tw-leading, var(--text-6xl--line-height));
+
+  font-size: var(--text-4xl);
+  line-height: var(--tw-leading, var(--text-4xl--line-height));
+  @media (width >= 64rem) {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
+  }
+  @media (width >= 80rem) {
+    font-size: var(--text-6xl);
+    line-height: var(--tw-leading, var(--text-6xl--line-height));
+  }
 }
 
 .subheader-style {
   font-family: 'Poppins', sans-serif;
-  font-size: var(--text-3xl);
-  line-height: var(--tw-leading, var(--text-3xl--line-height));
+
+  font-size: var(--text-xl);
+  line-height: var(--tw-leading, var(--text-xl--line-height));
+  @media (width >= 64rem) {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  @media (width >= 80rem) {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
 }
 
 .body-style {
@@ -62,13 +90,28 @@ html {
   border-width: 1px;
   border-radius: var(--radius-4xl);
   border-color: var(--secondary-color-faded);
-  padding-inline: calc(var(--spacing) * 8);
-  padding-block: calc(var(--spacing) * 5);
+
+  padding-inline: calc(var(--spacing) * 1);
+  padding-block: calc(var(--spacing) * 2);
+  @media (width >= 64rem) {
+    padding-block: calc(var(--spacing) * 3);
+  }
+  @media (width >= 80rem) {
+    padding-block: calc(var(--spacing) * 4);
+  }
 
   font-family: 'Poppins', sans-serif;
   color: #000000;
   text-decoration-line: underline;
   text-align: center;
+  align-content:center;
+
+  font-size: var(--text-sm);
+  line-height: var(--tw-leading, var(--text-sm--line-height));
+  @media (width >= 64rem) {
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-basesss--line-height));
+  }
 }
 
 .link-style-no-underline {
@@ -76,10 +119,41 @@ html {
   border-width: 1px;
   border-radius: var(--radius-4xl);
   border-color: var(--secondary-color-faded);
-  padding-inline: calc(var(--spacing) * 8);
-  padding-block: calc(var(--spacing) * 5);
+
+  padding-inline: calc(var(--spacing) * 1);
+  padding-block: calc(var(--spacing) * 2);
+  @media (width >= 64rem) {
+    padding-block: calc(var(--spacing) * 3);
+  }
+  @media (width >= 80rem) {
+    padding-block: calc(var(--spacing) * 4);
+  }
 
   font-family: 'Poppins', sans-serif;
   color: #000000;
   text-align: center;
+  align-content:center;
+
+  font-size: var(--text-sm);
+  line-height: var(--tw-leading, var(--text-sm--line-height));
+  @media (width >= 64rem) {
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-basesss--line-height));
+  }
+}
+
+.image-style {
+  border-radius: var(--radius-2xl);
+
+  max-width: calc(var(--spacing) * 80);
+  height:fit-content;
+  @media (width >= 48rem) {
+    max-width: calc(var(--spacing) * 100);
+  }
+  @media (width >= 64rem) {
+    max-width: calc(var(--spacing) * 120);
+  }
+  @media (width >= 80rem) {
+    max-width: calc(var(--spacing) * 135);
+  }
 }
