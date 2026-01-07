@@ -77,7 +77,7 @@
     {/snippet}
     {#snippet body()}
       <p>
-        We're here to strengthen Nordic roller derby across borders and inspire future generations of the sport by competing under the same banner
+        We're here to strengthen Nordic roller derby across borders and inspire future generations of our sport by competing under the same banner
         at the <a class="link" href="https://worldcup.mrda.org" target="_blank">World Cup</a>!
       </p>
       <p>
@@ -85,7 +85,7 @@
         we build the basis for a new Nordic roller derby culture.
       </p>
       <p>
-        Our name stems from 1937, when Europe's first queen regent,
+        Our name stems from 1397, when Europe's first queen regent,
         <a class="link" href="https://en.wikipedia.org/wiki/Margaret_I_of_Denmark" target="_blank">Margrete (or Margaret) I</a>,
         gathered the Nordic countries under her rule. Some 500 years later we're together again!
       </p>
@@ -180,7 +180,8 @@
         Thanks to Denise Azimarev for taking the action photos on this website!
       </p>
       <p>
-        Want to sponsor us? We can offer visibility on this site, in social media and in other ways. Get in touch to hear what we can offer!
+        Want to sponsor us? We can offer visibility on this site, in social media and in other ways.
+        <a class="link" href="mailto:kalmarunionrd@gmail.com">Get in touch to hear more</a>!
       </p>
     {/snippet}
   </Block>
