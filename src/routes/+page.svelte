@@ -46,16 +46,16 @@
   </div>
 
   <div id="newsletter" class="bg-(--primary-color)">
-    <div class="block-sizing text-(--support-color-gray) py-4">
+    <div class="newsletter-block text-(--support-color-gray) py-4">
       <form method="post" action="https://mailing.kalmarunion.eu/subscription/form" use:enhance>
         <div class="body-style mb-3">
           Join our newsletter about open-gender roller derby in the Nordics and our journey to the World Cup:
         </div>
-        <div class="flex max-sm:flex-col gap-3 max-w-60">
+        <div class="max-sm:grid max-sm:grid-cols-2 sm:flex gap-3 sm:max-w-60">
           <input type="hidden" name="nonce" />
           <input class="input-style" type="email" name="email" required placeholder="E-mail" />
           <input class="input-style" type="text" name="name" placeholder="Name (optional)" />
-          <input id="3cdc4" type="checkbox" name="l" checked value="3cdc4372-f6cc-45c4-92a9-1bed2f032045" hidden />
+          <input id="3cdc4" type="hidden" name="l" value="3cdc4372-f6cc-45c4-92a9-1bed2f032045" />
           <input class="button-style
                         text-black
                         bg-(--secondary-color)
@@ -187,7 +187,7 @@
   </Block>
 
   <div class="bg-(--support-color-blue)">
-    <div class="flex flex-col gap-4 block-sizing text-(--support-color-gray)">
+    <div class="flex flex-col gap-4 newsletter-block text-(--support-color-gray)">
       <div class="subheader-style">
         Get updates!
       </div>
@@ -195,11 +195,11 @@
         <div class="body-style mb-3">
           Join our newsletter about open-gender roller derby in the Nordics and our journey to the World Cup:
         </div>
-        <div class="flex max-sm:flex-col gap-3 max-w-60">
+        <div class="max-sm:grid max-sm:grid-cols-2 sm:flex gap-3 sm:max-w-60">
           <input type="hidden" name="nonce" />
           <input class="input-style" type="email" name="email" required placeholder="E-mail" />
           <input class="input-style" type="text" name="name" placeholder="Name (optional)" />
-          <input id="3cdc4" type="checkbox" name="l" checked value="3cdc4372-f6cc-45c4-92a9-1bed2f032045" hidden />
+          <input id="3cdc4" type="hidden" name="l" value="3cdc4372-f6cc-45c4-92a9-1bed2f032045" />
           <input class="button-style
                         text-(--support-color-gray)
                         bg-(--support-color-red)

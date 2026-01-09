@@ -40,6 +40,25 @@ html {
   }
 }
 
+.newsletter-block {
+  margin-inline: auto;
+  @media (width < 54rem) {
+    margin-inline: calc(var(--spacing) * 5);
+  }
+
+  max-width: calc(var(--spacing) * 150);
+  padding-block: calc(var(--spacing) * 12);
+  @media (width >= 48rem) {
+    max-width: calc(var(--spacing) * 200);
+  }
+  @media (width >= 64rem) {
+    max-width: calc(var(--spacing) * 250);
+  }
+  @media (width >= 80rem) {
+    max-width: calc(var(--spacing) * 290);
+  }
+}
+
 .header-style {
   font-family: 'Nunito', sans-serif;
   font-weight: var(--font-weight-semibold);
