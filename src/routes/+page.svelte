@@ -1,6 +1,5 @@
 <script lang="ts">
   import { InstagramIcon, FacebookIcon, MailIcon } from '@lucide/svelte/icons';
-  import { enhance } from '$app/forms';
   import logo from '$lib/assets/ku-logo.png';
   import img_about from '$lib/assets/about.jpg';
   import img_nordic_punch from '$lib/assets/nordic-punch.png';
@@ -47,7 +46,7 @@
 
   <div id="newsletter" class="bg-(--primary-color)">
     <div class="newsletter-block text-(--support-color-gray) py-4">
-      <form method="post" action="https://mailing.kalmarunion.eu/subscription/form" use:enhance>
+      <form method="post" action="https://mailing.kalmarunion.eu/subscription/form">
         <div class="body-style mb-3">
           Join our newsletter about open-gender roller derby in the Nordics and our journey to the World Cup:
         </div>
@@ -191,7 +190,7 @@
       <div class="subheader-style">
         Get updates!
       </div>
-      <form method="post" action="https://mailing.kalmarunion.eu/subscription/form" use:enhance>
+      <form method="post" action="https://mailing.kalmarunion.eu/subscription/form">
         <div class="body-style mb-3">
           Join our newsletter about open-gender roller derby in the Nordics and our journey to the World Cup:
         </div>
